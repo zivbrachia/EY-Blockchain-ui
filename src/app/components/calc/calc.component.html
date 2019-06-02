@@ -1,0 +1,18 @@
+<div>
+  <div class="grid-container1">
+    <input class="output" type="text" [formControl]="name">
+  </div>
+  <div class="grid-container3">
+    <div *ngFor="let number of numbers; index as i;" (click)="updateStatment(number)">{{number}}</div>
+  </div>
+</div>
+<div>
+  <div class="grid-container2">
+    <div *ngFor="let operator of operators; index as i;" (click)="updateStatment(operator)">{{operator}}</div>
+  </div>
+</div>
+<div>
+  <div class="grid-container1">
+    <div (click)="submitCalc()">=</div>
+  </div>
+</div>
